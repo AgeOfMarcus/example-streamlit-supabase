@@ -53,7 +53,8 @@ if 'username' not in st.session_state:
                 if not (username and password):
                     st.error('Username and password required.')
                 else:
-                    if (user := get_user(username)):
+                    user = get_user(username)
+                    if user:
                         if user['passhash'] == sha256(password.encode()).hexdigest():
                             st.session_state['username'] = str(username)
                             st.success('Signed in!')
