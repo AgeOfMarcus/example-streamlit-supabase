@@ -1,0 +1,3 @@
+streamlit
+supabase
+git+https://github.com/samdobson/streamlit-toggle
