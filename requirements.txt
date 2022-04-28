@@ -1,3 +1,4 @@
 streamlit
 supabase
 git+https://github.com/samdobson/streamlit-toggle
+websockets>=10.0 # not directly required, pinned by Snyk to avoid a vulnerability
